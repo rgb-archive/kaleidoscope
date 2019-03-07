@@ -27,8 +27,8 @@ impl<'a> RGBSubCommand<'a> for ListUnspent {
 				let proofs = database.get_proofs_for(&outpoint);
 				let mut vec2 = Vec::new();
 
-				let txidString= format!("\"txid:\": \"{}\"", outpoint.txid);
-				let voutString= format!("\"vout:\": {}", outpoint.vout);
+				let txidString= format!("\"txid\": \"{}\"", outpoint.txid);
+				let voutString= format!("\"vout\": {}", outpoint.vout);
 				let amountString = format!("\"amount\": {}", amount);
 
 				vec2.push (txidString);
