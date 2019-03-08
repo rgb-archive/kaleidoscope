@@ -1,2 +1,0 @@
-.listunspent | [.[] | select (has ("assets"))]
-
