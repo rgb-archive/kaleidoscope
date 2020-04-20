@@ -25,6 +25,7 @@
 #![feature(unwrap_infallible)]
 #![feature(in_band_lifetimes)]
 #![feature(repr_transparent)]
+#![feature(try_trait)]
 
 #[macro_use]
 extern crate tokio;
@@ -58,9 +59,9 @@ mod error;
 mod config;
 mod commands;
 mod runtime;
+mod data;
 
 mod accounts;
-
 
 use std::{env, fs};
 use log::*;
